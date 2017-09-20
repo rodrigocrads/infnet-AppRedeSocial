@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>AppInfnet</display-name>
+  <welcome-file-list>
+  	<welcome-file>CalculaController</welcome-file>
+    <welcome-file>calcula.jsp</welcome-file>
+    <welcome-file>principal.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>UsuarioController</display-name>
+    <servlet-name>UsuarioController</servlet-name>
+    <servlet-class>controle.UsuarioController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UsuarioController</servlet-name>
+    <url-pattern>/UsuarioController</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>CalculaController</display-name>
+    <servlet-name>CalculaController</servlet-name>
+    <servlet-class>controle.CalculaController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CalculaController</servlet-name>
+    <url-pattern>/CalculaController</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Teste</display-name>
+    <servlet-name>Teste</servlet-name>
+    <servlet-class>controle.Teste</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Teste</servlet-name>
+    <url-pattern>/Teste</url-pattern>
+  </servlet-mapping>
+</web-app>
